@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Login Page</title>
+<style>
+body {
+	font-family: Serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 20px;
+}
+
+.divbox {
+	text-align: center;
+}
+
+form {
+	background-color: #fff;
+			padding-top: 50px;
+			padding-right: 50px;
+			padding-left: 50px;
+			padding-bottom: 50px;
+			border-radius: 150px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width: 300px;
+			display: inline-block;
+}
+
+
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+				padding: 4px;
+				margin-top: 5px;
+				margin-bottom: 15px;
+				border: 2px solid rgb(255, 128, 64);
+				border-radius: 30px;
+				box-sizing: content-box;
+				height: 30px;
+}
+
+		.buttonclick {
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 30px;
+			font-style: oblique;
+			background-color: rgb(255, 128, 64);
+			font-size: 20px;
+		}
+		div {
+		  
+		  border: 5px solid rgb(255, 128, 64);
+		  padding: 0px;
+		  margin: 1px;
+		}
+		.buttonclick :hover {
+			background-color: #45a049;
+		}
+		.NewUserText
+		{
+			font-size: 15px;
+		}
+
+
+</style>
+</head>
+<body>
+
+	<div class="divbox">
+		<form action='DatabaseConnectiviy' method="post" >
+			<h2>User Login</h2>
+			<label for="username">Username</label>
+			<br> 
+			<input type="text" id="username" name="username" required>
+			<br> 
+			<label for="password">Password</label>
+			<br> 
+			<input type="password" id="password" name="userpassword" required>
+			<br><br>
+			<input class="buttonclick" type="submit" value="Login" target="_blank"> 
+			<br>
+			<p class="NewUserText">If you are a new User?<a href="./NewUserPage.jsp" target="_blank">Create new Account</a> </p>
+			<br> 
+			
+			<a class="buttonclick" href="./AdminPageLogin.jsp">Click here for Admin Login</a>
+			<br>
+		</form>
+	</div>
+
+</body>
+</html>
